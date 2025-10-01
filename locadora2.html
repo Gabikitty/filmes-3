@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 3 Filmes - A Locadora Pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>                                                                                                                                  
+<body>
+
+    <header id="header">
+        <div class="logo">
+            <h1>A Locadora do Top 3</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#filme1">Coraline</a></li>
+                <li><a href="#filme2">Jack</a></li>
+                <li><a href="#filme3">Wendell & Wild</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main-container">
+
+        <aside id="sidebar">
+            <h2>Lista de Filmes</h2>
+            <nav class="movie-list-nav">
+                <ol>
+                    <li><a href="#filme1">1. O Mundo Secreto de Coraline</a></li>
+                    <li><a href="#filme2">2. O Estranho Mundo de Jack</a></li>
+                    <li><a href="#filme3">3. Wendell & Wild</a></li>
+                </ol>
+            </nav>
+        </aside>
+
+        <main id="main-content">
+
+            <h2>O Meu Ranking Pessoal</h2>
+            <p>Veja meus 3 filmes favoritos e simule uma locação!</p>
+
+            <!-- Filme 1 -->
+            <section class="movie-ranking" id="filme1">
+                <div class="ranking-header">
+                    <h3>#1: O Mundo Secreto de Coraline (2009)</h3>
+                    <span class="rank-number">1º Lugar</span>
+                </div>
+                <p>Uma aventura sombria que mostra a importância de valorizar a família e enfrentar seus medos.</p>
+                <img src="coraline.jpg" alt="Poster Coraline" class="movie-poster">
+
+                <div class="locadora-actions">
+                    <button class="action-btn emprestar-btn" onclick="simularLocacao('filme1', 'Emprestar')">
+                        Emprestar (R$ 5,00)
+                    </button>
+                    <button class="action-btn vender-btn" onclick="simularLocacao('filme1', 'Vender')">
+                        Vender (R$ 30,00)
+                    </button>
+                    <p class="status-locacao" id="status-filme1">Disponível para locação.</p>
+                </div>
+            </section>
+
+            <!-- Filme 2 -->
+            <section class="movie-ranking" id="filme2">
+                <div class="ranking-header">
+                    <h3>#2: O Estranho Mundo de Jack (1993)</h3>
+                    <span class="rank-number">2º Lugar</span>
+                </div>
+                <p>Uma mistura criativa entre Halloween e Natal, com música e stop-motion inesquecíveis.</p>
+                <img src="mundo  de jack.webp" alt="Poster Estranho Mundo de Jack" class="movie-poster">
+
+                <div class="locadora-actions">
+                    <button class="action-btn emprestar-btn" onclick="simularLocacao('filme2', 'Emprestar')">
+                        Emprestar (R$ 5,00)
+                    </button>
+                    <button class="action-btn vender-btn" onclick="simularLocacao('filme2', 'Vender')">
+                        Vender (R$ 30,00)
+                    </button>
+                    <p class="status-locacao" id="status-filme2">Disponível para locação.</p>
+                </div>
+            </section>
+
+            <!-- Filme 3 -->
+            <section class="movie-ranking" id="filme3">
+                <div class="ranking-header">
+                    <h3>#3: Wendell & Wild (2022)</h3>
+                    <span class="rank-number">3º Lugar</span>
+                </div>
+                <p>Do mesmo diretor de Coraline, uma animação excêntrica que mistura fantasia e humor sombrio.</p>
+                <img src="wendellwild.jpg" alt="Poster Wendell e Wild" class="movie-poster">
+
+                <div class="locadora-actions">
+                    <button class="action-btn emprestar-btn" onclick="simularLocacao('filme3', 'Emprestar')">
+                        Emprestar (R$ 5,00)
+                    </button>
+                    <button class="action-btn vender-btn" onclick="simularLocacao('filme3', 'Vender')">
+                        Vender (R$ 30,00)
+                    </button>
+                    <p class="status-locacao" id="status-filme3">Disponível para locação.</p>
+                </div>
+            </section>
+
+            <footer class="site-footer">
+                <p>&copy; 2025 Ranking Pessoal de Filmes. Todos os direitos reservados.</p>
+            </footer>
+
+            <script src="locadora.js"></script>
+        </main>
+    </div>
+
+</body>
+</html>

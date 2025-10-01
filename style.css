@@ -1,0 +1,147 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b1a0b; /* verde escuro de fundo */
+    color: #d4f0d4; /* verde claro para texto */
+    line-height: 1.6;
+}
+
+a {
+    color: #7fff7f; /* verde vibrante para links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #b3ffb3; /* verde mais claro no hover */
+}
+
+/* Cabeçalho */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    background: linear-gradient(to right, #003300, #006600); /* verde escuro gradiente */
+    border-bottom: 2px solid #7fff7f; /* borda verde clara */
+}
+
+.logo h1 {
+    color: #d4f0d4; /* verde claro */
+    font-size: 1.2em;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 15px;
+    font-size: 0.9em;
+}
+
+/* Layout principal */
+#main-container {
+    display: flex;
+    padding-top: 60px;
+}
+
+/* Sidebar */
+#sidebar {
+    width: 220px;
+    background: #002200; /* verde escuro */
+    padding: 15px;
+    border-right: 1px solid #004400; /* verde escuro borda */
+}
+
+#sidebar h2 {
+    color: #7fff7f;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #004400;
+}
+
+.movie-list-nav ol li {
+    margin-bottom: 6px;
+}
+
+/* Conteúdo principal */
+#main-content {
+    flex: 1;
+    padding: 15px;
+}
+
+.movie-ranking {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #004400;
+    border-radius: 8px;
+    background: #003300; /* fundo verde escuro */
+}
+
+.movie-ranking img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.locadora-actions button {
+    margin: 5px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.emprestar-btn {
+    background: #7fff7f; /* verde claro */
+    color: #003300; /* texto escuro */
+}
+
+.vender-btn {
+    background: #004400; /* verde escuro */
+    color: #d4f0d4; /* texto claro */
+}
+
+/* Rodapé */
+.site-footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    border-top: 1px solid #004400;
+    font-size: 0.8em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #main-container {
+        flex-direction: column;
+    }
+
+    #sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #004400;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .movie-ranking img {
+        max-width: 100%;
+    }
+}
